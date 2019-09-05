@@ -1,0 +1,138 @@
+/*кнопка обратной связи*/
+
+.email-bt {
+    background:#13a64f;
+    border:2px solid #fafafa;
+    border-radius:50%;
+    box-shadow:2px 8px 20px rgba(249,92,24,0.3);
+    cursor:pointer;
+    height:60px;
+    text-align:center;
+    width:60px;
+    position: fixed;
+    left: 0.5%;
+    bottom: 0.5%;
+    z-index:999;
+    transition:.3s;
+    -webkit-animation:email-an linear 1s infinite;
+    animation:email-an linear 1s infinite;
+}
+
+.email-bt .text-call{
+    height:68px;
+    width:68px;
+    border-radius:50%;
+    position:relative;
+    overflow:hidden;
+}
+
+.email-bt .text-call span {
+    text-align: center;
+    color:#F95C18;
+    opacity: 0;
+    font-size: 20px;
+    position:absolute;
+    right: 14px;
+    top: 22px;
+    line-height: 14px;
+    font-weight: 200;
+    transition: opacity .3s linear;
+    font-family: 'montserrat', Arial, Helvetica, sans-serif;
+}
+
+.email-bt .text-call:hover span {
+    opacity: 1;
+    font-size: 11px;
+    z-index:999;
+
+}
+.email-bt:hover i {
+    display:none;
+    z-index:999;
+
+}
+
+.email-bt:hover {
+    z-index:999;
+    background:#fff;
+    transition:.3s;
+}
+.email-bt:hover i {
+    color: #cb9865;
+    z-index:999;
+    font-size:40px;
+    transition:.3s;
+}
+.email-bt i {
+    color: #fffeff;
+    font-size:22px;
+    margin-right: 10px;
+    transition:.3s;
+    line-height: 55px;
+}
+
+.email-bt i  {
+    -webkit-animation: opsimple 3s infinite;
+    animation: opsimple 3s infinite;
+}
+
+/*@-webkit-keyframes email-an {*/
+    /*0% {*/
+        /*box-shadow:0 8px 10px rgba(29, 165, 25, 0.3), 0 0 0 0 rgba(249,92,24,0.2), 0 0 0 0 rgba(249,92,24,0.2)*/
+    /*}*/
+    /*40% {*/
+        /*box-shadow:0 8px 10px #cb9865, 0 0 0 15px rgba(21, 201, 65, 0.2), 0 0 0 0 rgba(249,92,24,0.2)*/
+
+    /*}*/
+    /*80% {*/
+        /*box-shadow:0 8px 10px rgba(42, 165, 16, 0.3),0 0 0 30px rgba(249,92,24,0),0 0 0 26.7px rgba(249,92,24,0.067)*/
+    /*}*/
+    /*100% {*/
+        /*box-shadow:0 8px 10px rgba(203, 152, 101, 0.3),0 0 0 30px rgba(249,92,24,0),0 0 0 40px rgba(249,92,24,0.0)*/
+    /*}*/
+/*}@keyframes email-an {*/
+     /*0% {*/
+         /*box-shadow:0 8px 10px rgba(29, 165, 25, 0.3),0 0 0 0 rgba(249,92,24,0.2),0 0 0 0 rgba(249,92,24,0.2)*/
+     /*}*/
+     /*40% {*/
+         /*box-shadow:0 8px 10px rgba(255, 138, 39, 0.3),0 0 0 15px rgba(29, 165, 25, 0.3),0 0 0 0 rgba(249,92,24,0.2)*/
+     /*}*/
+     /*80% {*/
+         /*box-shadow:0 8px 10px rgba(255, 138, 39, 0.3),0 0 0 30px rgba(249,92,24,0),0 0 0 26.7px rgba(249,92,24,0.067)*/
+     /*}*/
+     /*100% {*/
+         /*box-shadow:0 8px 10px rgba(249,92,24,0.3),0 0 0 30px rgba(249,92,24,0),0 0 0 40px rgba(249,92,24,0.0)*/
+     /*}*/
+ /*}*/
+
+@keyframes opsimple {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes opsimple {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+/* конец кнопки звязи */
